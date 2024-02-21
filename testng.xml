@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="LMS Application">
+
+	<!-- 1st Test Module -->
+	<test thread-count="5" name="Student">
+		<classes>
+			<class name="t_pack.TestOne" />
+			<class name="t_pack.TestTwo" />
+			<class name="t_pack.TestThree" />
+			<class name="o_pack.TestFour" />	
+		</classes>
+	</test> <!-- Test -->
+	
+	<!-- 2nd Test Module -->
+	<test thread-count="5" name="Admin">
+		<classes>
+			<class name="o_pack.TestFive" />
+			<class name="o_pack.TestSix" />
+			<class name="k_pack.TestSeven" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
